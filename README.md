@@ -1,4 +1,4 @@
-# 🎬📚 CineReads — Movie & Book Search Engine
+#  CineReads — Movie & Book Search Engine
 
 A from-scratch information-retrieval system that indexes **25,139 documents**
 (10,000 movies + 15,139 books) in a single **inverted index** and ranks results
@@ -11,7 +11,7 @@ title autocomplete, relevance snippets, and a dark, responsive single-page UI.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Inverted index** with positional postings lists (`term → {doc_id → [positions]}`)
 - **Preprocessing**: lowercase → punctuation strip → tokenise → stopword removal → Porter stemming
@@ -24,7 +24,7 @@ title autocomplete, relevance snippets, and a dark, responsive single-page UI.
 
 ---
 
-## 📁 Project structure
+## Project structure
 
 ```
 cinereads/
@@ -46,7 +46,7 @@ imported and tested on its own.
 
 ---
 
-## 🚀 Quick start
+## Quick start
 
 ```bash
 # 1. Install dependencies
@@ -76,7 +76,7 @@ Datasets used:
 
 ---
 
-## 🔍 Try it from the command line
+## Try it from the command line
 
 ```bash
 python test_search.py "space adventure"          # default: AND, all types
@@ -86,7 +86,7 @@ python test_search.py "love war" OR               # OR mode
 
 ---
 
-## 🌐 API reference
+## API reference
 
 | Endpoint       | Params                                   | Returns                          |
 |----------------|------------------------------------------|----------------------------------|
@@ -103,7 +103,7 @@ GET /api/search?q=vampire%20romance&mode=AND&type=all&k=10
 
 ---
 
-## 🧠 How ranking works
+## How ranking works
 
 For a query, each candidate document is scored as:
 
@@ -120,7 +120,7 @@ dominates** and well-rated titles only break ties between similar matches.
 
 ---
 
-## ⚠️ Known limitations / future work
+## Known limitations / future work
 
 - **Director field is empty** for movies (it lives in a separate `credits.csv`,
   not in `movies_metadata.csv`); joining it in would enrich movie search.
@@ -131,7 +131,7 @@ dominates** and well-rated titles only break ties between similar matches.
 
 ---
 
-## 👥 Authors
+##  Authors
 
 - **MD Tanveer Mahmood Shanin** — ID: 0432220005101117
 - **Joydev Datta** — ID: 0432220005101132
