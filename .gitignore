@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# NLTK / Kaggle caches
+nltk_data/
+.kaggle/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: search_index.pkl IS committed on purpose so the app runs without a
+# Kaggle download. Remove the next line if you prefer to rebuild it locally.
+# search_index.pkl
